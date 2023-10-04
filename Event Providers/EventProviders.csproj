@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Event_Providers</RootNamespace>
+    <RootNamespace>EventProviders</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -13,8 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Event Concerns\Event Concerns.csproj" />
-    <ProjectReference Include="..\Event Contracts\Event Contracts.csproj" />
+    <ProjectReference Include="..\Event Concerns\EventConcerns.csproj" />
+    <ProjectReference Include="..\Event Contracts\EventContracts.csproj" />
+    <ProjectReference Include="..\Event.Repository\EventRepository.csproj" />
   </ItemGroup>
 
 </Project>

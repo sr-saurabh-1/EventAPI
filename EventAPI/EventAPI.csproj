@@ -13,9 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Event Concerns\Event Concerns.csproj" />
-    <ProjectReference Include="..\Event Contracts\Event Contracts.csproj" />
-    <ProjectReference Include="..\Event Providers\Event Providers.csproj" />
+    <ProjectReference Include="..\Event Concerns\EventConcerns.csproj" />
+    <ProjectReference Include="..\Event Contracts\EventContracts.csproj" />
+    <ProjectReference Include="..\Event Providers\EventProviders.csproj" />
+    <ProjectReference Include="..\Event.Repository\EventRepository.csproj" />
   </ItemGroup>
 
 </Project>

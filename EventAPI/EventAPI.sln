@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventAPI", "EventAPI.csproj", "{80825DDE-15BA-456A-BC92-C61722259ECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAPI", "EventAPI.csproj", "{80825DDE-15BA-456A-BC92-C61722259ECB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event Concerns", "..\Event Concerns\Event Concerns.csproj", "{BE3DF5FB-135C-4DF5-AE16-FF7EFB7A77D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventConcerns", "..\Event Concerns\EventConcerns.csproj", "{BE3DF5FB-135C-4DF5-AE16-FF7EFB7A77D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event Providers", "..\Event Providers\Event Providers.csproj", "{D0C02D88-7B28-46A3-B080-B8C098FD4BED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventProviders", "..\Event Providers\EventProviders.csproj", "{D0C02D88-7B28-46A3-B080-B8C098FD4BED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event Contracts", "..\Event Contracts\Event Contracts.csproj", "{CD3912DD-6366-49CB-87EA-B2871A42C167}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventContracts", "..\Event Contracts\EventContracts.csproj", "{CD3912DD-6366-49CB-87EA-B2871A42C167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventRepository", "..\Event.Repository\EventRepository.csproj", "{BC5C5BEC-3F70-446C-BEB1-C4B20192E134}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{CD3912DD-6366-49CB-87EA-B2871A42C167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD3912DD-6366-49CB-87EA-B2871A42C167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD3912DD-6366-49CB-87EA-B2871A42C167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC5C5BEC-3F70-446C-BEB1-C4B20192E134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC5C5BEC-3F70-446C-BEB1-C4B20192E134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC5C5BEC-3F70-446C-BEB1-C4B20192E134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC5C5BEC-3F70-446C-BEB1-C4B20192E134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

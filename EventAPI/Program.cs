@@ -1,6 +1,7 @@
-using Event_Contracts;
-using Event_Providers;
-using Microsoft.AspNetCore.Mvc;
+using EventContracts;
+using EventProviders;
+using EventRepository.Contracts;
+using EventRepository.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,13 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSingleton< IEventContracts, EventProviders > ();
+builder.Services.AddSingleton<IEventContract, EventProvider>();
+builder.Services.AddSingleton<IRepositoryContract, Repository>();
 
 builder.Services.AddSwaggerGen();
-//builder.Services.Configure<JsonOptions>(option =>
-//{
-//    option.JsonSerializerOptions.Converters.Add);
-//})
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
